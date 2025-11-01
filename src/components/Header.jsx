@@ -6,7 +6,8 @@ const Header = () => {
 
 
     return (
-        <header className=' relative w-full h-paddind-lg my-padding-sm px-padding-lg'>
+        <header className=' relative w-full px-padding-md h-paddind-lg my-padding-sm 
+        lg:px-padding-lg'>
             <nav className='sticky max-w-[1440px] flex justify-between '>
                 <div className='flex items-center'>
                     <div className=''>
