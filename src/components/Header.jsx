@@ -4,12 +4,12 @@ const Header = () => {
 
     const [toggleMenu, setToggleMenu] = useState(false);
 
-    
+
 
 
     return (
         <header className=' relative w-full px-padding-sm h-auto my-padding-sm 
-        lg:px-padding-lg'>
+        Stablet:px-padding-md lg:px-padding-lg'>
             <nav className='bg-primary fixed left-0 right-0 px-padding-sm z-101 top-padding-sm w-full flex justify-between p- 
             lg:px-padding-lg '>
                 <div className='flex items-center'>
@@ -30,54 +30,61 @@ const Header = () => {
                     <button className=' h-15 w-[210px] p-2 rounded-xl border-[1.5px] '>Request a quote</button>
                 </ul>
                 <div className='lg:hidden'>
-                    {toggleMenu ? <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg> 
-                    :
-                    <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>}
+                    {toggleMenu ? <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg>
+                        :
+                        <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>}
 
-                    
-                    
+
+
                 </div>
 
             </nav>
 
             <div className='mt-35 w-full flex justify-between items-center
             lg:mt-[130px] '>
-                <div className='border max-w-full flex flex-col lg:max-w-[510px]'>
+                <div className=' max-w-full flex flex-col lg:max-w-[510px]'>
                     <h1 className='text-xl font-bold  '>Navigating the digital landscape for success</h1>
-                    <div className='border min-w-full lg:min-w-[550px] min-h-[400px] z-0 relative pl-10 lg:hidden'>
-                        <div className='relative max-w-[500px] rotate-30 top-40 left-4  '>
-                            <img src="/Ring.png" alt="ring" className='absolute z-1 top-7' />
-                            <img src="/Ring.png" alt="ring" className='absolute z-1' />
-                            <img src="/Ring.png" alt="ring" className='absolute z-1 top-14 ' />
+                    <div className='flex justify-center items-center  min-w-full lg:min-w-[550px] min-h-[400px] z-0 relative  
+                    desktop:hidden'>
+                        <div className='min-w-[330px] max-w-[400px] h-[400px] relative '>
+                            <div className='relative max-w-[500px] max-h-[500px] rotate-30 top-40 left-4  '>
+                                <img src="/Ring.png" alt="ring" className='absolute z-1 top-6 left-3' />
+                                <img src="/Ring.png" alt="ring" className='absolute z-1 left-3' />
+                                <img src="/Ring.png" alt="ring" className='absolute z-1 top-11 left-3 ' />
+                            </div>
+                            <div className=' absolute w-[220px] z-100 top-12 left-17 '>
+                                <img className=''
+                                    src="/Megaphone.png" alt="megaphone" />
+                                <img
+                                    className='absolute w-[48px] max-w-[50px] -top-2 right-1'
+                                    src="/Heart.png" alt="Heart Icon" />
+                                <img
+                                    className='absolute min-w-[38px] max-w-[50px] top-0 -right-11'
+                                    src="/Share.png" alt="Share Icon" />
+                                <img
+                                    className='absolute min-w-[38px] max-w-[50px] top-14 -right-10'
+                                    src="/Play.png" alt="Play Button" />
+                                <div className='flex justify-center items-center absolute top-30 -right-7 min-w-[37px] min-h-[37px]
+                                 max-w-[67px] max-h-[67px] rounded-[100%] border-2 bg-primary'>
+                                    <img
+                                        className='w-5 '
+                                        src="/Location.png" alt="Location Button" />
+                                </div>
+                            </div>
+                            <img className='absolute max-w-[38px] rotate-45 left-10 bottom-30
+                                lg:max-w-[76px]'
+                                src="/Star.png" alt="Star Icon" />
+                            <img className='absolute w-5 right-35 bottom-20 '
+                                src="/Star.png" alt="Star Icon" />
+                            <img className='absolute w-4 left-16 top-26'
+                                src="/GreenBall.png" alt="Green Circle" />
+                            <img className='absolute w-3 right-23 bottom-23'
+                                src="/GreenBall.png" alt="Green Circle" />
+                            <img className='absolute w-7 top-17 left-8'
+                                src="/Ellipse.png" alt="Green Circle" />
+
                         </div>
-                        <img className=' absolute w-[220px] z-100 '
-                            src="/Megaphone.png" alt="megaphone" />
-                        <img
-                            className='absolute min-w-[38px] max-w-[77px] right-20'
-                            src="/Heart.png" alt="Heart Icon" />
-                        <img
-                            className='absolute min-w-[38px] max-w-[77px] right-1 top-5'
-                            src="/Share.png" alt="Share Icon" />
-                        <img
-                            className='absolute min-w-[38px] max-w-[77px] right-0 top-25'
-                            src="/Play.png" alt="Play Button" />
-                        <div className='flex justify-center items-center absolute top-48 right-2 min-w-[33px] min-h-[33px]
-                    max-w-[67px] max-h-[67px] rounded-[100%] border-2 bg-primary'>
-                            <img
-                                className='w-8 '
-                                src="/Location.png" alt="Location Button" />
-                        </div>
-                        <img className='absolute max-w-[38px] rotate-45 left-25 bottom-30
-                        lg:max-w-[76px]'
-                            src="/Star.png" alt="Star Icon" />
-                        <img className='absolute w-5 right-60 bottom-15 '
-                            src="/Star.png" alt="Star Icon" />
-                        <img className='absolute w-3 left-31 top-15'
-                            src="/GreenBall.png" alt="Green Circle" />
-                        <img className='absolute w-2 right-30 bottom-16'
-                            src="/GreenBall.png" alt="Green Circle" />
-                        <img className='absolute w-5 top-5 left-10'
-                            src="/Ellipse.png" alt="Green Circle" />
+
                     </div>
                     <p className='mt-7 max-w-full lg:w-[425px] '>Our digital marketing agency helps businesses grow and
                         succeed online through a range of services including SEO,
