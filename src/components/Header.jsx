@@ -95,40 +95,43 @@ const Header = () => {
                     >Book of consultation
                     </button>
                 </div>
-                <div className=' min-w-0 lg:min-w-[550px] z-0 relative pl-10 hidden lg:block '>
-                    <div className='relative w-[500px] rotate-30 top-40 left-10  '>
-                        <img src="/Ring.png" alt="ring" className='absolute z-1 top-9' />
-                        <img src="/Ring.png" alt="ring" className='absolute z-1' />
-                        <img src="/Ring.png" alt="ring" className='absolute z-1 top-18 ' />
-                    </div>
-                    <img className=' absolute w-[300px] z-100 top-5 left-45 '
-                        src="/Megaphone.png" alt="megaphone" />
-                    <img
-                        className='absolute w-[77px] right-20'
-                        src="/Heart.png" alt="Heart Icon" />
-                    <img
-                        className='absolute w-[77px] right-1 top-5'
-                        src="/Share.png" alt="Share Icon" />
-                    <img
-                        className='absolute w-[77px] right-0 top-25'
-                        src="/Play.png" alt="Play Button" />
-                    <div className='flex justify-center items-center absolute top-48 right-2
-                    w-[67px] h-[67px] rounded-[100%] border-2 bg-primary'>
+                <div className='h-[500px]'>
+                    <div className='relative min-w-0 lg:min-w-[480px] lg:max-w-[550px] h-[445px] z-0 hidden lg:block '>
+                        <div className='relative w-[500px] rotate-30 top-40 left-10  '>
+                            <img src="/Ring.png" alt="ring" className='absolute z-1 top-9' />
+                            <img src="/Ring.png" alt="ring" className='absolute z-1' />
+                            <img src="/Ring.png" alt="ring" className='absolute z-1 top-18 ' />
+                        </div>
+                        <img className=' absolute w-[300px] z-100 top-2 left-30 '
+                            src="/Megaphone.png" alt="megaphone" />
                         <img
-                            className='w-8 '
-                            src="/Location.png" alt="Location Button" />
+                            className='absolute w-[77px] right-20'
+                            src="/Heart.png" alt="Heart Icon" />
+                        <img
+                            className='absolute w-[77px] right-1 top-5'
+                            src="/Share.png" alt="Share Icon" />
+                        <img
+                            className='absolute w-[77px] right-0 top-25'
+                            src="/Play.png" alt="Play Button" />
+                        <div className='flex justify-center items-center absolute top-48 right-2
+                    w-[67px] h-[67px] rounded-[100%] border-2 bg-primary'>
+                            <img
+                                className='w-8 '
+                                src="/Location.png" alt="Location Button" />
+                        </div>
+                        <img className='absolute rotate-45 left-15 bottom-25'
+                            src="/Star.png" alt="Star Icon" />
+                        <img className='absolute w-6 left-60 bottom-13 '
+                            src="/Star.png" alt="Star Icon" />
+                        <img className='absolute w-7 left-21 top-15'
+                            src="/GreenBall.png" alt="Green Circle" />
+                        <img className='absolute w-4 left-85 bottom-18'
+                            src="/GreenBall.png" alt="Green Circle" />
+                        <img className='absolute w-10 top-3 left-7'
+                            src="/Ellipse.png" alt="Green Circle" />
                     </div>
-                    <img className='absolute rotate-45 left-25 bottom-30'
-                        src="/Star.png" alt="Star Icon" />
-                    <img className='absolute w-8 right-60 bottom-15 '
-                        src="/Star.png" alt="Star Icon" />
-                    <img className='absolute w-7 left-31 top-15'
-                        src="/GreenBall.png" alt="Green Circle" />
-                    <img className='absolute w-4 right-30 bottom-16'
-                        src="/GreenBall.png" alt="Green Circle" />
-                    <img className='absolute w-10 top-5 left-10'
-                        src="/Ellipse.png" alt="Green Circle" />
                 </div>
+
             </div>
             <div className='w-full mt-19'>
                 <ul
