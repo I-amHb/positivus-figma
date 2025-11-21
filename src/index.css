@@ -22,8 +22,9 @@ body {
 
   --text-xl: 55px;
   --text-lar: 35px;
-  --text-mid: 16px;
-  --text-sm: 8px;
+  --text-mid: 25px;
+  --text-sm: 16px;
+  /* --text-sm: 8px; */
 
   /* Color/Theme */
   --color-primary: #B9FF66;
@@ -32,13 +33,16 @@ body {
 
   /* Spacing */
 
-  --spacing-padding-lg: 82px;
+  --spacing-padding-lg: 75px;
   --spacing-padding-md: 62px;
-  --spacing-padding-sm: 42px;
+  --spacing-padding-sm: 22px;
 
   /* Breakpoints */
 
-  --breakpoint-mobile: ;
-  --breakpoint-tablet: ;
-  --breakpoint-desktop: ;
+  --breakpoint-Smobile: 320px;
+  --breakpoint-Mmobile: 375px;
+  --breakpoint-Lmobile: 425px;
+  --breakpoint-Stablet: 764px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-Ldesktop: 1440px;
 }
