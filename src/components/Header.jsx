@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <header className=' relative w-full px-padding-sm h-auto my-padding-sm 
         Stablet:px-padding-md lg:px-padding-lg'>
-            <nav className='bg-primary fixed left-0 right-0 px-padding-sm z-101 top-padding-sm w-full h-[55px] flex justify-between p- 
+            <nav className='bg-white fixed left-0 right-0 px-padding-sm z-101 top-0 w-full h-[105px] flex justify-between py-padding-sm 
             lg:px-padding-lg '>
                 <div className='flex items-center'>
                     <div className=''>
@@ -20,16 +20,19 @@ const Header = () => {
                     </div>
                     <h1 className='text-lar font-medium ml-2 '>Positivus</h1>
                 </div>
-                <ul className='absolute top-[55px] right-0 flex flex-col border bg-primary h-screen items-center font-normal text-[18px] 
-                lg:flex-row lg:static lg:h-auto  '>
+                <ul className={`absolute w-2/3 top-[105px] bg-inherit flex flex-col h-screen items-center 
+                font-normal text-[18px] transition-all transform- ease-in-out duration-200 
+                ${!toggleMenu ? '-right-full':'right-0'} 
+                md:w-1/3 lg:flex-row lg:static lg:w-auto lg:h-auto  `}>
                     <li className=' lg:mr-9'><a href="#">About us</a></li>
                     <li className=' lg:mr-9'><a href="#">Services</a></li>
                     <li className=' lg:mr-9'><a href="#">Use Cases</a></li>
                     <li className=' lg:mr-9'><a href="#">Pricing</a></li>
                     <li className=' lg:mr-9'><a href="#">Blog</a></li>
-                    <button className=' h-15 w-[210px] p-2 rounded-xl border-[1.5px] '>Request a quote</button>
+                    <button className=' h-15 w-[210px] p-2 rounded-xl border-[1.5px] ' >Request a quote</button>
                 </ul>
-                <div className='lg:hidden'>
+                <div className='lg:hidden' 
+                    onClick={() => setToggleMenu(prev => !prev)}>
                     {toggleMenu ? <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg>
                         :
                         <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>}
