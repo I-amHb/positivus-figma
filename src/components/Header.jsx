@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <header className=' relative w-full px-padding-sm h-auto my-padding-sm 
         Stablet:px-padding-md lg:px-padding-lg'>
-            <nav className='bg-primary fixed left-0 right-0 px-padding-sm z-101 top-padding-sm w-full flex justify-between p- 
+            <nav className='bg-primary fixed left-0 right-0 px-padding-sm z-101 top-padding-sm w-full h-[55px] flex justify-between p- 
             lg:px-padding-lg '>
                 <div className='flex items-center'>
                     <div className=''>
@@ -20,8 +20,8 @@ const Header = () => {
                     </div>
                     <h1 className='text-lar font-medium ml-2 '>Positivus</h1>
                 </div>
-                <ul className='hidden items-center font-normal text-[18px] 
-                lg:flex '>
+                <ul className='absolute top-[55px] right-0 flex flex-col border bg-primary h-screen items-center font-normal text-[18px] 
+                lg:flex-row lg:static lg:h-auto  '>
                     <li className=' lg:mr-9'><a href="#">About us</a></li>
                     <li className=' lg:mr-9'><a href="#">Services</a></li>
                     <li className=' lg:mr-9'><a href="#">Use Cases</a></li>
