@@ -94,7 +94,8 @@ const Header = () => {
                         PPC, social media marketing, and content creation.
                     </p>
                     <button
-                        className='h-16 max-w-[250px] mt-5 p-2 px-8 rounded-xl border-[1.5px] text-white bg-secondary'
+                        className='h-16 w-full md:w-2/3 lg:max-w-[250px] mt-5 self-center lg:self-start
+                        p-2 px-8 rounded-xl border-[1.5px] text-white bg-secondary'
                     >Book of consultation
                     </button>
                 </div>
