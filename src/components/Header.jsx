@@ -22,7 +22,7 @@ const Header = () => {
                 </div>
                 <ul className={`absolute w-2/3 top-[105px] bg-inherit flex flex-col h-screen items-center 
                 font-normal text-[18px] transition-all transform- ease-in-out duration-200 
-                ${!toggleMenu ? '-right-full':'right-0'} 
+                ${!toggleMenu ? '-right-full' : 'right-0 bg-primary'} 
                 md:w-1/3 lg:flex-row lg:static lg:w-auto lg:h-auto  `}>
                     <li className=' lg:mr-9'><a href="#">About us</a></li>
                     <li className=' lg:mr-9'><a href="#">Services</a></li>
@@ -31,7 +31,7 @@ const Header = () => {
                     <li className=' lg:mr-9'><a href="#">Blog</a></li>
                     <button className=' h-15 w-[210px] p-2 rounded-xl border-[1.5px] ' >Request a quote</button>
                 </ul>
-                <div className='lg:hidden' 
+                <div className='lg:hidden'
                     onClick={() => setToggleMenu(prev => !prev)}>
                     {toggleMenu ? <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg>
                         :
@@ -138,16 +138,16 @@ const Header = () => {
 
             </div>
             <div className='w-full mt-19'>
-                <ul
-                    className='flex justify-between items-center [&>li]:w-[120px] [&>li]:grayscale '
+                <div
+                    className=' grid justify-between gap-4 grid-cols-2 md:grid-cols-6 md:gap-2  md:[&>div]:w-[110px] lg:grid-cols-6 lg:gap-10 [&>div]:w-[120px] [&>div]:grayscale mx-auto max-w-fit '
                 >
-                    <li><img src="/amazon-logo.png" alt="amazon logo" /></li>
-                    <li><img src="/dribble-logo.png" alt=" logo" /></li>
-                    <li><img src="/hubspot-logo.png" alt="hubspot logo" /></li>
-                    <li><img src="/notion-logo.png" alt="notion logo" /></li>
-                    <li><img src="/netflix-logo.png" alt="netflix logo" /></li>
-                    <li><img src="/zoom-logo.png" alt="zoom logo" /></li>
-                </ul>
+                    <div><img src="/amazon-logo.png" alt="amazon logo" /></div>
+                    <div><img src="/dribble-logo.png" alt=" logo" /></div>
+                    <div><img src="/hubspot-logo.png" alt="hubspot logo" /></div>
+                    <div><img src="/notion-logo.png" alt="notion logo" /></div>
+                    <div><img src="/netflix-logo.png" alt="netflix logo" /></div>
+                    <div><img src="/zoom-logo.png" alt="zoom logo" /></div>
+                </div>
             </div>
         </header>
     )
