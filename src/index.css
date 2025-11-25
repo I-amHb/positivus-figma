@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -45,4 +45,22 @@ body {
   --breakpoint-Stablet: 764px;
   --breakpoint-desktop: 1024px;
   --breakpoint-Ldesktop: 1440px;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1186px) {
+
+  .nav-li {
+    margin-right: 12px;
+  }
+
+  
+}
+@media (min-width: 1187px) {
+
+  .nav-li {
+    margin-right: 36px;
+  }
+
+  
 }

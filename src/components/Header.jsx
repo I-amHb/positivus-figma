@@ -24,11 +24,11 @@ const Header = () => {
                 font-normal text-[18px] transition-all transform- ease-in-out duration-200 
                 ${!toggleMenu ? '-right-full' : 'right-0 bg-primary'} 
                 md:w-1/3 lg:flex-row lg:static lg:w-auto lg:h-auto  `}>
-                    <li className=' lg:mr-9'><a href="#">About us</a></li>
-                    <li className=' lg:mr-9'><a href="#">Services</a></li>
-                    <li className=' lg:mr-9'><a href="#">Use Cases</a></li>
-                    <li className=' lg:mr-9'><a href="#">Pricing</a></li>
-                    <li className=' lg:mr-9'><a href="#">Blog</a></li>
+                    <li className='nav-li lg:mr-9 '><a href="#">About us</a></li>
+                    <li className='nav-li lg:mr-9 '><a href="#">Services</a></li>
+                    <li className='nav-li lg:mr-9 '><a href="#">Use Cases</a></li>
+                    <li className='nav-li lg:mr-9 '><a href="#">Pricing</a></li>
+                    <li className='nav-li lg:mr-9 '><a href="#">Blog</a></li>
                     <button className=' h-15 w-[210px] p-2 rounded-xl border-[1.5px] ' >Request a quote</button>
                 </ul>
                 <div className='lg:hidden'
