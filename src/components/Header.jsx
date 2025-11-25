@@ -8,7 +8,7 @@ const Header = () => {
 
 
     return (
-        <header className=' relative w-full px-padding-sm h-auto my-padding-sm 
+        <header className=' flex flex-col relative w-full px-padding-sm h-auto my-padding-sm items-center
         Stablet:px-padding-md lg:px-padding-lg'>
             <nav className='bg-white fixed left-0 right-0 px-padding-sm z-101 top-0 w-full h-[105px] flex justify-between py-padding-sm 
             lg:px-padding-lg '>
@@ -21,9 +21,9 @@ const Header = () => {
                     <h1 className='text-lar font-medium ml-2 '>Positivus</h1>
                 </div>
                 <ul className={`absolute w-2/3 top-[105px] bg-inherit flex flex-col h-screen items-center 
-                font-normal text-[18px] transition-all transform- ease-in-out duration-200 
+                font-normal text-[18px] transition-all transform- ease-in-out duration-200 pt-5 gap-6
                 ${!toggleMenu ? '-right-full' : 'right-0 bg-primary'} 
-                md:w-1/3 lg:flex-row lg:static lg:w-auto lg:h-auto  `}>
+                md:w-1/3 lg:flex-row lg:static lg:w-auto lg:h-auto lg:gap-0  `}>
                     <li className='nav-li lg:mr-9 '><a href="#">About us</a></li>
                     <li className='nav-li lg:mr-9 '><a href="#">Services</a></li>
                     <li className='nav-li lg:mr-9 '><a href="#">Use Cases</a></li>
@@ -43,7 +43,7 @@ const Header = () => {
 
             </nav>
 
-            <div className='mt-35 w-full flex justify-between items-center
+            <div className=' self-center mt-35 w-full max-w-[1440px] flex justify-between items-center
             lg:mt-[130px] '>
                 <div className=' max-w-full flex flex-col lg:max-w-[510px]'>
                     <h1 className='text-xl font-bold  '>Navigating the digital landscape for success</h1>
@@ -139,7 +139,8 @@ const Header = () => {
             </div>
             <div className='w-full mt-19'>
                 <div
-                    className=' grid justify-between gap-4 grid-cols-2 md:grid-cols-6 md:gap-2  md:[&>div]:w-[110px] lg:grid-cols-6 lg:gap-10 [&>div]:w-[120px] [&>div]:grayscale mx-auto max-w-fit '
+                    className=' grid justify-between gap-4 grid-cols-2 md:grid-cols-6 md:gap-2  md:[&>div]:w-[110px] mx-auto max-w-fit 
+                    lg:flex lg:justify-between lg:w-full lg:mx-none lg:max-w-[1440px] [&>div]:w-[120px] [&>div]:grayscale '
                 >
                     <div><img src="/amazon-logo.png" alt="amazon logo" /></div>
                     <div><img src="/dribble-logo.png" alt=" logo" /></div>
