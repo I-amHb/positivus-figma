@@ -139,8 +139,7 @@ const Header = () => {
             </div>
             <div className='w-full mt-19'>
                 <div
-                    className=' grid justify-between gap-4 grid-cols-2 md:grid-cols-6 md:gap-2  md:[&>div]:w-[110px] mx-auto max-w-fit 
-                    lg:flex lg:justify-between lg:w-full lg:mx-none lg:max-w-[1440px] [&>div]:w-[120px] [&>div]:grayscale '
+                    className='sponsor-parent justify-between flex-wrap md:flex-nowrap lg:flex-nowrap flex gap-1 w-full max-w-[1440px] [&>div]:w-[120px] [&>div]:grayscale '
                 >
                     <div><img src="/amazon-logo.png" alt="amazon logo" /></div>
                     <div><img src="/dribble-logo.png" alt=" logo" /></div>

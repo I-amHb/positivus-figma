@@ -48,6 +48,17 @@ body {
 }
 
 
+
+
+@media (min-width: 536px) and (max-width: 1024px) {
+
+  .sponsor-parent {
+    flex-wrap: nowrap;
+  }
+
+  
+}
+
 @media (min-width: 1024px) and (max-width: 1186px) {
 
   .nav-li {
@@ -56,6 +67,7 @@ body {
 
   
 }
+
 @media (min-width: 1187px) {
 
   .nav-li {
