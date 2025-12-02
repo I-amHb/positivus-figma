@@ -21,7 +21,7 @@ const Header = () => {
                     <h1 className='text-lar font-medium ml-2 '>Positivus</h1>
                 </div>
                 <ul className={`absolute w-2/3 top-[105px] bg-inherit flex flex-col h-screen items-center 
-                font-normal text-[18px] transition-all transform- ease-in-out duration-200 pt-5 gap-6
+                font-normal text-[18px] transition-all transform- ease-in-out duration-200 gap-6
                 ${!toggleMenu ? '-right-full' : 'right-0 bg-primary'} 
                 md:w-1/3 lg:flex-row lg:static lg:w-auto lg:h-auto lg:gap-0  `}>
                     <li className='nav-li lg:mr-9 '><a href="#">About us</a></li>
