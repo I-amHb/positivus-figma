@@ -47,6 +47,10 @@ body {
   --breakpoint-Ldesktop: 1440px;
 }
 
+body {
+  padding-bottom: 62px;
+}
+
 
 .servicesCard-container {
   grid-auto-rows: 1fr;
@@ -70,6 +74,12 @@ body {
   @media (width >= 1193px) {
     right: 0;
   }
+}
+
+.case-studies-tabs {
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: scroll;
 }
 
 
