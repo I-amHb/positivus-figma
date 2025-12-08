@@ -9,8 +9,11 @@ const Studies = () => {
           Case Studies
         </p>
       </div>
-      <div className='case-studies-tabs grid mt-padding-md text-white w-full justify-center gap-x-4 
-      [&>div]:min-w-[280px] [&>div]:w-full [&>div]:max-w-[300px] [&>div]:px-padding-sm [&>div]:py-[55px] [&>div]:bg-secondary [&>div]:rounded-4xl '>
+      <div className='w-full'>
+        <div className='case-studies-tabs grid mt-padding-md text-white w-full justify-center gap-x-4 [&>div]:min-w-[280px] 
+      [&>div]:w-full [&>div]:max-w-[300px] [&>div]:px-padding-sm [&>div]:py-[55px] [&>div]:bg-secondary [&>div]:rounded-4xl
+      lg:bg-secondary lg:rounded-4xl lg:w-full lg:gap-0 lg:[&>div]:bg-inherit lg:p-padding-md 
+      lg:[&>div]:px-4 lg:[&>div]:py-0 lg:[&>div:nth-child(2)]:border-[2px solid white] lg:[&>div]:rounded-none '>
         <div className='flex flex-col gap-8  '>
           <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic 
             and a 25% increase in sales.</p>
@@ -20,7 +23,7 @@ const Studies = () => {
             </a>
           </div>
         </div>
-        <div className='flex flex-col gap-8 '>
+        <div className='mid flex flex-col gap-8 border-white'>
           <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords 
             and a 200% increase in organic traffic.</p>
           <div>
@@ -39,6 +42,8 @@ const Studies = () => {
           </div>
         </div>
       </div>
+      </div>
+      
     </section>
 
   )

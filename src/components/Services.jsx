@@ -91,7 +91,7 @@ const Services = () => {
           <p className='mt-5 lg:w-[400px]'>Contact us today to learn about how our digital marketing services can help your business grow and succeed online.</p>
           <button className='bg-secondary text-white p-2 rounded-xl mt-5 w-full md:w-2/3 h-16'>Get your proposal</button>
         </div>
-        <div className='hidden lg:block w-88 h-[350px]' >
+        <div className='services-cta hidden lg:block w-88 h-[350px]' >
           <img className='services-cta-img lg:absolute -top-5 w-[550px]' src="/Frame19.png" alt="frame" />
         </div>
       </div>
