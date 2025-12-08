@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Process from "./components/Process";
 import Services from "./components/Services";
 import Studies from "./components/Studies";
 
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <Services/>
       <Studies/>
+      <Process/>
       
     </>
   )
