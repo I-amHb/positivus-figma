@@ -58,7 +58,7 @@ body {
   column-gap: 4px;
 
   @media (width >= 554px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
   }
 
   @media (width >=1024px) {
