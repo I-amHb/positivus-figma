@@ -54,7 +54,6 @@ body {
 
 
 .servicesCard-container {
-  grid-auto-rows: 1fr;
   column-gap: 4px;
 
   @media (width >= 554px) {

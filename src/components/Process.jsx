@@ -31,10 +31,10 @@ const Process = () => {
       ' >
 
         {expandTab.map((item, index) => (
-          <div className='w-full h-auto'
+          <div className={`w-full h-auto transition-all  ease-in-out duration-600 ${item.expanded ? 'bg-primary':'bg-white' }`}
           key={index}>
           <div className={
-            `flex justify-between items-center   ${item.expanded ? `border-b-0` : `border-b pb-padding-sm` }`
+            `flex justify-between items-center   ${item.expanded ? ` pb-padding-sm ` : `border-b-0` }`
           }>
             <div className='flex items-center gap-2'>
               <h1 className='text-lar font-bold lg:text-xl'>{item.step}</h1>
@@ -42,12 +42,12 @@ const Process = () => {
             </div>
             <div key={index} className='w-10'
               onClick={() => toggleTab(index)}>
-              {!item.expanded ? <img src="/minus-icon.png" alt="minus icon" /> :
-                <img src="/plus-icon.png" alt="plus icon" />}
+              {!item.expanded ? <img src="/plus-icon.png" alt="plus icon" /> :
+               <img src="/minus-icon.png" alt="minus icon" /> }
             </div>
           </div>
-          <div className={` transition-all transform ease-in-out duration-300
-            ${item.expanded ? `max-h-0`: `max-h-[400px] overflow-hidden pt-padding-sm`}
+          <div className={` transition-all
+            ${item.expanded ? `max-h-[400px] overflow-hidden pt-padding-sm border-t`: `max-h-0`}
             overflow-hidden`} >
             <p>
               {item.content}
