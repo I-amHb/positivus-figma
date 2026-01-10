@@ -26,15 +26,15 @@ const Process = () => {
         <p className='text-center max-w-[505px] lg:w-[300px] lg:text-left'>Step-by-Step Guide to Achieving Your Business Goals
         </p>
       </div>
-      <div className='servicesCard-container w-full  mt-padding-md grid [&>div]:p-padding-sm
+      <div className='process-container w-full  mt-padding-md [&>div]:p-padding-sm
       [&>div]:border-2 [&>div]:border-b-7 [&>div]:mt-padding-sm [&>div]:h-auto [&>div]:rounded-4xl
       ' >
 
         {expandTab.map((item, index) => (
-          <div className={`w-full h-auto transition-all  ease-in-out duration-600 ${item.expanded ? 'bg-primary':'bg-white' }`}
+          <div className={`w-full h-auto  transition-all ease-in-out duration-600 ${item.expanded ? 'bg-primary':'bg-white' }`}
           key={index}>
-          <div className={
-            `flex justify-between items-center   ${item.expanded ? ` pb-padding-sm ` : `border-b-0` }`
+          <div className={ 
+            `flex justify-between items-center lg:py-padding-sm lg:px-padding-sm ${item.expanded ? ` pb-padding-sm ` : `border-b-0` }`
           }>
             <div className='flex items-center gap-2'>
               <h1 className='text-lar font-bold lg:text-xl'>{item.step}</h1>
@@ -46,8 +46,8 @@ const Process = () => {
                <img src="/minus-icon.png" alt="minus icon" /> }
             </div>
           </div>
-          <div className={` transition-all
-            ${item.expanded ? `max-h-[400px] overflow-hidden pt-padding-sm border-t`: `max-h-0`}
+          <div className={` transition-all px-padding-sm
+            ${item.expanded ? `max-h-[400px] overflow-hidden pt-padding-sm lg:pb-padding-sm border-t`: `max-h-0`}
             overflow-hidden`} >
             <p>
               {item.content}

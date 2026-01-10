@@ -35,6 +35,7 @@ body {
 
   --spacing-padding-lg: 75px;
   --spacing-padding-md: 62px;
+  --spacing-padding-smid: 42px;
   --spacing-padding-sm: 22px;
 
   /* Breakpoints */
@@ -54,10 +55,11 @@ body {
 
 
 .servicesCard-container {
+  grid-auto-rows: 1fr;
   column-gap: 4px;
 
   @media (width >= 554px) {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(2,1fr);
   }
 
   @media (width >=1024px) {
