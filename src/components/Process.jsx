@@ -20,14 +20,14 @@ const Process = () => {
   };
 
   return (
-    <section className='px-padding-sm lg:px-padding-lg h-screen  '>
+    <section className='px-padding-sm lg:px-padding-lg   '>
       <div className='mt-16 flex flex-col justify-center gap-5 lg:gap-8 items-center lg:flex-row lg:justify-start'>
         <h1 className='text-center'><span className='text-lar font-bold bg-primary '>Our Woring Process</span></h1>
         <p className='text-center max-w-[505px] lg:w-[300px] lg:text-left'>Step-by-Step Guide to Achieving Your Business Goals
         </p>
       </div>
       <div className='process-container w-full  mt-padding-md [&>div]:p-padding-sm
-      [&>div]:border-2 [&>div]:border-b-7 [&>div]:mt-padding-sm [&>div]:h-auto [&>div]:rounded-4xl
+      [&>div]:border-2 [&>div]:border-b-7 [&>div]:mt-padding-sm [&>div]:h-auto [&>div]:rounded-[40px]
       ' >
 
         {expandTab.map((item, index) => (
@@ -36,11 +36,11 @@ const Process = () => {
           <div className={ 
             `flex justify-between items-center lg:py-padding-sm lg:px-padding-sm ${item.expanded ? ` pb-padding-sm ` : `border-b-0` }`
           }>
-            <div className='flex items-center gap-2'>
-              <h1 className='text-lar font-bold lg:text-xl'>{item.step}</h1>
+            <div className='flex items-center gap-4'>
+              <h1 className='text-mid font-bold lg:text-xl'>{item.step}</h1>
               <h1 className='font-bold lg:text-lar'>{item.title}</h1>
             </div>
-            <div key={index} className='w-10'
+            <div key={index} className='w-8 lg:w-10'
               onClick={() => toggleTab(index)}>
               {!item.expanded ? <img src="/plus-icon.png" alt="plus icon" /> :
                <img src="/minus-icon.png" alt="minus icon" /> }
