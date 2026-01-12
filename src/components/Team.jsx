@@ -18,6 +18,23 @@ const team = [
         <p className='text-center max-w-[505px] lg:text-left'>Meet the skilled and experienced team behind our successful digital marketing strategies  
         </p>
       </div>
+      <div className='team-container'>
+        <div className=' border-2 border-b-7 rounded-4xl p-padding-smid'>
+          <div className='flex pb-3'>
+            <div className='team-pic w-25 mr-4'><img src="/Picture1.png" alt="" /></div>
+            <div className='w-full '>
+              <div className='w-full flex  justify-end'><img className='w-7 self-end' src="/LinkedIn-icon.png" alt="linkedin icon" /></div>
+              <div>
+                <h1 className='font-bold'>John Smith</h1>
+                <h4>CEO and Founder</h4>
+              </div>
+            </div>
+          </div>
+          <div className='border-t-2 pt-3'>
+            <p>10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
