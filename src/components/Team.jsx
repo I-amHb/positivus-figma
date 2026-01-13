@@ -13,7 +13,7 @@ const Team = () => {
   return (
     <section className='px-padding-sm lg:px-padding-lg h-auto '>
       <div className='mt-16 flex flex-col justify-center gap-5 lg:gap-8 items-center lg:flex-row lg:justify-start'>
-        <h1 className=""><span className='p-1 rounded text-lar font-bold bg-primary text-center'>Team</span></h1>
+        <h1 className=""><span className='px-2 rounded text-lar font-bold bg-primary text-center'>Team</span></h1>
         <p className='text-center max-w-[505px] lg:text-left'>Meet the skilled and experienced team behind our successful digital marketing strategies
         </p>
       </div>
