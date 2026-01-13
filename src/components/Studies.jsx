@@ -4,7 +4,7 @@ const Studies = () => {
   return (
     <section className='px-padding-sm lg:px-padding-lg h-auto '>
       <div className='mt-16 flex flex-col justify-center gap-5 lg:gap-8 items-center lg:flex-row lg:justify-start'>
-        <h1><span className='text-lar font-bold bg-primary text-center'>Case Studies</span></h1>
+        <h1><span className='p-1 rounded text-lar font-bold bg-primary text-center'>Case Studies</span></h1>
         <p className='text-center max-w-[505px] lg:text-left'>Explore Real-Life Examples of our Proven Digital Marketing Success through Our
           Case Studies
         </p>

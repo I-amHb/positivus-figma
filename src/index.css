@@ -123,6 +123,17 @@ body {
   }
 }
 
+.team-button-container {
+  @media (width >= 661px) {
+  button {
+    min-width: 200px;
+    max-width: 250px;
+  }
+    justify-content: end;
+    
+  }
+}
+
 
 @media (min-width: 536px) and (max-width: 1024px) {
 
