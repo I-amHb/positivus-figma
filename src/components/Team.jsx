@@ -18,11 +18,11 @@ const Team = () => {
         <p className='text-center max-w-[505px] lg:text-left'>Meet the skilled and experienced team behind our successful digital marketing strategies
         </p>
       </div>
-      <div className='team-container'>
+      <div className='team-container mt-padding-md  grid justify-center gap-6'>
         {team.map((person) => (
-          <div className=' border-2 border-b-7 rounded-4xl p-padding-smid'>
+          <div className='border-2 max-w-[400px] md:max-w-full border-b-7 rounded-4xl p-padding-smid'>
             <div className='flex pb-3'>
-              <div className='team-pic w-25 mr-4'><img src={person.path}alt={`${person.name}'s image`} /></div>
+              <div className='team-pic flex items-center w-25 mr-4'><img src={person.path}alt={`${person.name}'s image`} /></div>
               <div className='w-full '>
                 <div className='w-full flex  justify-end'><img className='w-7 self-end' src="/LinkedIn-icon.png" alt="linkedin icon" /></div>
                 <div>
