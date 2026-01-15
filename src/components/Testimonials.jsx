@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonials = () => {
 
-  const testimonials = [
+  const testimonial = [
     {
       name: 'John Smith',
       role: "Marketing Director at XYZ Corp",
@@ -27,8 +27,20 @@ const Testimonials = () => {
         <p className='text-center max-w-[505px] lg:text-left'>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services
         </p>
       </div>
-      <div className='testimonials-container w-full min-h-24 mt-18 bg-secondary rounded-4xl'>
-
+      <div className='testimonials-container h-auto text-white w-full min-h-24 mt-18 bg-secondary rounded-4xl'>
+          {testimonial.map((user) => (
+            <div className='p-padding-sm min-w-[330px] '>
+              <div className='border border-primary p-padding-sm rounded-4xl'>
+                  <p className=''>{user.quote}</p>
+              </div>
+              <div className='pl-14 mt-8'>
+                <h2 className='font-bold text-[15px] md:text-[16] '>{user.name}</h2>
+                <p className='text-[13px] md:text-[18]'>{user.role}</p>
+              </div>
+              <div className='triangle border-primary'></div>
+            </div>
+            
+          ))}
       </div>
     </section>
   )

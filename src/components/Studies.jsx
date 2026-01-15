@@ -10,7 +10,7 @@ const Studies = () => {
         </p>
       </div>
       <div className='w-full'>
-        <div className='case-studies-tabs grid mt-padding-md text-white w-full justify-center gap-x-4 [&>div]:min-w-[280px] 
+        <div className='case-studies-tabs grid mt-padding-md text-white w-full justify-start gap-x-4 [&>div]:min-w-[280px] 
       [&>div]:w-full [&>div]:max-w-[300px] [&>div]:px-padding-sm [&>div]:py-[55px] [&>div]:bg-secondary [&>div]:rounded-4xl
       lg:bg-secondary lg:rounded-4xl lg:w-full lg:gap-0 lg:[&>div]:bg-inherit lg:p-padding-md 
       lg:[&>div]:px-4 lg:[&>div]:py-0 lg:[&>div:nth-child(2)]:border-[2px solid white] lg:[&>div]:rounded-none '>
