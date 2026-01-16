@@ -141,6 +141,19 @@ body {
   overflow-x: scroll;
 }
 
+.testimonial {
+  @media (width >= 661px) {
+    min-width: 400px;
+  }
+
+  @media (width >= 1024px) {
+    min-width: 515px;
+  }
+
+
+
+}
+
 
 @media (min-width: 536px) and (max-width: 1024px) {
 

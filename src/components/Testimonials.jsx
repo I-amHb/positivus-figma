@@ -28,19 +28,21 @@ const Testimonials = () => {
         </p>
       </div>
       <div className='testimonials-container h-auto text-white w-full min-h-24 mt-18 bg-secondary rounded-4xl'>
-          {testimonial.map((user) => (
-            <div className='p-padding-sm min-w-[330px] '>
-              <div className='border border-primary p-padding-sm rounded-4xl'>
-                  <p className=''>{user.quote}</p>
-              </div>
-              <div className='pl-14 mt-8'>
-                <h2 className='font-bold text-[15px] md:text-[16] '>{user.name}</h2>
-                <p className='text-[13px] md:text-[18]'>{user.role}</p>
-              </div>
-              <div className='triangle border-primary'></div>
+        {testimonial.map((user) => (
+          <div className='testimonial relative z-100  p-padding-sm min-w-[330px] '>
+            <div className='relative z-0 border border-primary bg-secondary p-padding-sm rounded-4xl'>
+              <p className='bg-secondary'>{user.quote}</p>
             </div>
-            
-          ))}
+            <div className=' absolute z-1 w-[100px] left-13 bottom-19'><svg id="eZRlzJQGx5k1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 154" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="6c993f5bfe7e4561aa31547ad62dfbe4" export-id="a0b70685cf66475c8478bcd10afdefb8" cached="false"><polygon points="50,69.193858 -100,200 200,200 50,69.193858" transform="matrix(1 0 0 -1 100 219.193858)" fill="#191a23"/><line x1="77.015355" y1="63.147792" x2="-59.578713" y2="-56.906235" transform="translate(72.984645 86.852208)" fill="none" stroke="#b9ff66" stroke-width="2"/><line x1="-75" y1="65.403071" x2="61.235294" y2="-54.650956" transform="translate(225 84.596929)" fill="none" stroke="#b9ff66" stroke-width="2"/></svg></div>
+            <div className='pl-18 mt-13'>
+              <h2 className='font-bold text-[15px] md:text-[16] '>{user.name}</h2>
+              <p className='text-[13px] md:text-[18]'>{user.role}</p>
+            </div>
+            <div className='triangle border-primary'></div>
+
+          </div>
+
+        ))}
       </div>
     </section>
   )
