@@ -137,11 +137,13 @@ body {
 .testimonials-container {
   display: flex;
   flex-direction: row;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  /* overflow-y: hidden;
+  overflow-x: scroll; */
 }
 
 .testimonial {
+  min-width: 100%;
+
   @media (width >= 661px) {
     min-width: 400px;
   }
