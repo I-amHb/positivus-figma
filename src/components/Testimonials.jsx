@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 const Testimonials = () => {
 
@@ -25,33 +25,38 @@ const Testimonials = () => {
     },
   ]
 
+  const containerRef = useRef(null)
   const [current, setCurrent] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 661);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 661)
-    };
+ 
+  const scrollToIndex = (index) => {
+    const container = containerRef.current;
+    const card = container.children[index];
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+    card.scrollIntoView({
+      behavior: 'smooth',
+      inline: 'center'
+    })
 
-  const CARD_WIDTH = window.innerWidth >= 1024
-    ? 515
-    : window.innerWidth >= 661
-      ? 400
-      : null;
+    setCurrent(index);
+  }
 
-  const transformStyle = isMobile
-    ? `translateX(-${current * 100}%)`
-    : `translateX(-${current * (CARD_WIDTH + 24)}px)`;
+ const prev = () => {
+    scrollToIndex(
+      current === 0 ? testimonial.length - 1 : current - 1
+    )
+  }
 
-  const prev = () => setCurrent(current === 0 ? testimonial.length - 1 : current - 1)
-  const next = () => setCurrent(current === testimonial.length - 1 ? 0 : current + 1)
+  const next = () => {
+    scrollToIndex(
+      current === testimonial.length - 1 ? 0 : current + 1
+    )
+  }
 
-  const UserTestimonial = testimonial.map((user) => (
-    <div className='testimonial relative z-100  p-padding-sm min-w-[330px] '>
+  const UserTestimonial = testimonial.map((user, i) => (
+    <div 
+    key={i}
+    className='testimonial relative z-100  p-padding-sm min-w-[330px] '>
       <div className='relative z-0 border border-primary bg-secondary p-padding-sm rounded-4xl'>
         <p className='bg-secondary'>{user.quote}</p>
       </div>
@@ -72,8 +77,7 @@ const Testimonials = () => {
         </p>
       </div>
       <div className=' h-auto text-white w-full min-h-24 mt-18 bg-secondary rounded-4xl overflow-hidden'>
-        <div className='testimonials-container transition-transform ease-out duration-500'
-          style={{ transform: transformStyle}}>
+        <div ref={containerRef} className='testimonials-container px-padding-sm'>
           {UserTestimonial}
         </div>
         <div className='navigator-cont w-full'>
