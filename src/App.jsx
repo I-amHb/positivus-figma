@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Process from "./components/Process";
 import Services from "./components/Services";
@@ -17,6 +18,7 @@ function App() {
       <Process/>
       <Team/>
       <Testimonials/>
+      <Contact/>
       {/* <Test/> */}
     </>
   )
