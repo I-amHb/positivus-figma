@@ -1,4 +1,4 @@
-import useIntersectionObserver from '../../public/useIntersectionObserver'
+import useIntersectionObserver from './useIntersectionObserver'
 
 const Contact = () => {
 
