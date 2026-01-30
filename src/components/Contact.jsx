@@ -1,6 +1,13 @@
-import React from 'react'
+import useIntersectionObserver from '../../public/useIntersectionObserver'
 
 const Contact = () => {
+
+ const [ref, show] = useIntersectionObserver({
+  threshold: 0.2,
+});
+
+
+
   return (
     <section className='px-padding-sm lg:px-padding-lg h-auto'>
       <div className='mt-16 flex flex-col justify-center gap-5 lg:gap-8 items-center lg:flex-row lg:justify-start'>
@@ -43,7 +50,13 @@ const Contact = () => {
             </div>
 
           </div>
-          <div className='hidden lg:block img-container w-full col-start-3 col-end-4 row-span-1'><img src="/Mask-group.png" alt="Mask group image" className='w-full' /></div>
+          <div className='hidden lg:block img-container lg:relative w-full col-start-3 col-end-4 row-span-1'>
+            <img src="/Mask-group.png" alt="Mask group image" className='w-full' />
+            <img className={`green-star hidden lg:block absolute w-35 bottom-35 -left-15 ${show ? 'show': ''}`}
+            ref={ref} src="/Vectorgreen.png" alt="green star" />
+            <img className={` black-star hidden lg:block absolute w-70 top-42 left-0 ${show ? 'show': ''}`}
+            ref={ref} src="/Vector.png" alt="black star" />
+          </div>
         </form>
       </div>
 

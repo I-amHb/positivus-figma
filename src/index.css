@@ -229,3 +229,24 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
   visibility: visible;
 }
+
+
+.green-star.show,
+.black-star.show{
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite ;
+  animation-name: spin;
+}
+
+@keyframes spin{
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
