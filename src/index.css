@@ -49,7 +49,7 @@ body {
 }
 
 body {
-  padding-bottom: 62px;
+  /* padding-bottom: 62px; */
 }
 
 
@@ -233,7 +233,7 @@ input[type="radio"]:checked::before {
 
 .green-star.show,
 .black-star.show{
-  animation-duration: 15s;
+  animation-duration: 20s;
   animation-timing-function: linear;
   animation-iteration-count: infinite ;
   animation-name: spin;

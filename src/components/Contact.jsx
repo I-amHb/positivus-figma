@@ -18,7 +18,7 @@ const Contact = () => {
       <div className='form-container mt-padding-md'>
         <form action="" className=' w-full border bg-tertiary p-padding-sm rounded-4xl 
         lg:grid lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] '> {/* check here */}
-          <div className='FS-container lg:max-w-[580px] col-start-1  col-end-3'>
+          <div className='FS-container lg:max-w-[700px] col-start-1  col-end-3'>
             <fieldset id='radio' className='radio flex justify-evenly' >
               <label name='hi'>
                 <input type="radio" name="contact-type" id="say-hi" defaultChecked /> Say Hi!
@@ -43,7 +43,7 @@ const Contact = () => {
             </fieldset>
             <div className="btn-container w-full flex justify-center">
               <button
-                className='h-16 w-full md:w-2/3 lg:max-w-[250px] mt-5 self-center lg:self-start
+                className='h-16 w-full md:w-2/3 lg:max-w-full mt-5 self-center lg:self-start
                         p-2 px-8 rounded-xl border-[1.5px] md:self-center text-white bg-secondary'
               >Send a Message
               </button>
